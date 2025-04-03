@@ -6,12 +6,12 @@ import { profileSvg, searchSvg } from "./svg";
 
 const NavBar = () => {
   return (
-    <nav style={{ backgroundColor: theme.colors.secondary }}>
+    <nav id="nav" style={{ backgroundColor: theme.colors.secondary }}>
       <div className="section-one">
         <img src="/public/LogoPaw.png" alt="Logo PawPaw" />
       </div>
       <div className="section-two">
-        <form>
+        <form className="form">
           <input
             type="text"
             className="search-bar"
@@ -22,12 +22,12 @@ const NavBar = () => {
           </button>
         </form>
         <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/adopciones">Adopciones</a></li>
-          <li><a href="/voluntarios">Voluntarios</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/tienda">Tienda</a></li>
+          <li id="li"><a href="/">Home</a></li>
+          <li id="li"><a href="/adopciones">Adopciones</a></li>
+          <li id="li"><a href="/voluntarios">Voluntarios</a></li>
+          <li id="li"><a href="/blog">Blog</a></li>
+          <li id="li"><a href="/servicios">Servicios</a></li>
+          <li id="li"><a href="/tienda">Tienda</a></li>
         </ul>
       </div>
       <div className="section-three">

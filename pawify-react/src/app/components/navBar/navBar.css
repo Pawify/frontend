@@ -1,5 +1,5 @@
 /*Estilos de NavBar creado por Jhonny Bracho*/
-nav {
+#nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,13 +22,13 @@ nav {
 .section-two {
     width: 60%;
 }
-form {
+.form {
     display: flex;
     align-items: center;
     width: 100%;
     height: 45px;
 }
-input {
+.search-bar {
     width: 90%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -48,11 +48,14 @@ input {
     align-items: center;
     justify-content: center;
 }
+button:hover {
+    cursor: pointer;
+}
 #search-svg {
     width: 20px;
     height: 20px;
 }
-ul {
+.nav-links {
     width: 100%;
     display: flex;
     padding-top: 10px;
@@ -82,13 +85,10 @@ li:hover {
     width: 30px;
     height: 30px;
 }
-button:hover {
-    cursor: pointer;
-}
 
 /*Responsive para telefonos*/
 @media (max-width: 768px) {
-    nav {
+    #nav {
       flex-direction: column;
       align-items: flex-start;
       height: auto;
@@ -105,12 +105,12 @@ button:hover {
       width: 100%;
     }
   
-    form {
+    .form {
       width: 100%;
       flex-direction: row;
     }
   
-    input {
+    .search-bar {
       width: 80%;
       font-size: 14px;
     }
@@ -119,7 +119,7 @@ button:hover {
       width: 20%;
     }
   
-    ul {
+    .nav-links {
       flex-direction: row;
       gap: 20px;
       padding-top: 10px;
@@ -127,7 +127,7 @@ button:hover {
       padding-left: 10px;
     }
   
-    li {
+    .li {
       font-size: 14px;
     }
   
@@ -158,7 +158,7 @@ button:hover {
 
 /*Responsive para tablets*/
 @media (min-width: 769px) and (max-width: 1024px) {
-    nav {
+    #nav {
         position: fixed;
         top: 0;
         left: 0;
@@ -175,7 +175,7 @@ button:hover {
 
 /*Responsive para telefonos pequenos*/
 @media (max-width: 480px) {
-    nav {
+    #nav {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
@@ -192,12 +192,12 @@ button:hover {
         width: 100%;
     }
     
-    form {
+    .form {
         width: 100%;
         flex-direction: row;
     }
     
-    input {
+    .search-bar {
         width: 80%;
         font-size: 12px;
         height: 80%;
@@ -208,7 +208,7 @@ button:hover {
         height: 80%;
     }
     
-    ul {
+    .nav-links {
         flex-direction: row;
         gap: 10px;
         padding-top: 10px;
@@ -216,7 +216,7 @@ button:hover {
         padding-left: 5px;
     }
     
-    li {
+    .li {
         font-size: 12px;
     }
     
@@ -241,7 +241,7 @@ button:hover {
         width: 15px;
         height: 15px;
     }
-      .hashtag {
+    .hashtag {
           display: none;
     }
 }
