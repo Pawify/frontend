@@ -1,0 +1,178 @@
+/* Main container */
+.adoptions-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  margin: 80px auto;
+  position: relative;
+  max-width: 1200px;
+}
+
+/* Hero section */
+#hero-logo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#hero-logo-section img {
+  width: 100%;
+  max-height: 1000px;
+  object-fit: contain; 
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Search section */
+.search-container {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Filter inputs */
+.filter-group {
+  width: 100%;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 12px 35px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus {
+  border-color: #79c5e6;
+  outline: none;
+}
+
+/* Search button */
+.search-button {
+  background-color: #FCD039;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 9px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-button:hover {
+  background-color: #f8c000;
+  transform: scale(1.05);
+}
+
+/* Animals section */
+.animals-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* General section styles */
+section {
+  padding: 10px;
+  width: 100%;
+}
+
+/* Media queries for tablets */
+@media (max-width: 1024px) {
+  .adoptions-container {
+    margin: 10px auto;
+    padding: 0 15px;
+  }
+  
+  .search-container {
+    padding: 15px;
+  }
+  
+  .search-filters {
+    flex-wrap: wrap;
+  }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 767px) {
+  .adoptions-container {
+    padding: 0 10px;
+    width: 100%;
+    margin: 10px auto;
+  }
+  
+  #hero-logo-section {
+    width: 100%;
+    max-width: none !important;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #hero-logo-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .search-container {
+    padding: 5px;
+  }
+  
+  .search-filters {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  
+  .filter-input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  
+  .search-button {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  
+  .animals-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .animals-section > div {
+    width: 100%;
+  }
+  
+  section {
+    padding: 20px 10px;
+  }
+}
